@@ -9,5 +9,16 @@ try to use the conditional statement if...else, if val value is false
 (val==false or it can convert to false), should return a string "false",
 if not, return a string "true". 
  
- --> 
+ -->
 
+solution:
+
+function trueOrFalse(val){
+if (val==false) return "false";
+if (val==0) return "false";
+if (val==-0) return "false";
+if (val==null) return "false";
+if (val==undefined) return "false";
+if (val==NaN) return "false";
+else return "true";
+}
